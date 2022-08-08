@@ -20,4 +20,4 @@ jobs:
         env:
           destination: ${{ matrix.destination }}
         run: |
-          xcodebuild clean build -project PetProject.xcodeproj -scheme PetProject -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean build -project PetProject.xcodeproj -scheme PetProject -destination "platform=iOS Simulator,OS=13.2.2,name=iPhone 11" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
