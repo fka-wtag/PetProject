@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        destination: ['platform=iOS Simulator,OS:15.2, name:iPhone 13']
+        destination: ['platform=iOS Simulator, OS:15.2, name:iPhone 13']
 
     steps:
       - name: Checkout
@@ -19,5 +19,6 @@ jobs:
       - name: Build
         env:
           destination: ${{ matrix.destination }}
+          scheme: 'PetProject'
         run: |
-          xcodebuild clean build -project PetProject.xcodeproj -scheme PetProject -destination ${destination} CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean build -project PetProject.xcodeproj -scheme ${scheme} -destination ${destination} CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
