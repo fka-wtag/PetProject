@@ -9,9 +9,9 @@ jobs:
     name: Build and Test default scheme using any available iPhone simulator
     runs-on: macos-latest
 
-    - name: Secrets
-        run: |
-          echo ${{ secrets.SOMESECRET }}
+    name: Secrets
+      run: |
+        echo ${{ secrets.SOMESECRET }}
 
     strategy:
       matrix:
