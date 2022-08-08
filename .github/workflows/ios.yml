@@ -19,6 +19,5 @@ jobs:
       - name: Build
         env:
           destination: ${{ matrix.destination }}
-          scheme: 'PetProject'
         run: |
-          xcodebuild clean build -project PetProject.xcodeproj -scheme ${scheme} -destination ${destination} CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean build -project PetProject.xcodeproj -scheme 'PetProject' -destination "${destination}"" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
