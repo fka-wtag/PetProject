@@ -24,6 +24,5 @@ jobs:
       - name: Build
         env:
           destination: ${{ matrix.destination }}
-          DEVELOPER_DIR: /Applications/Xcode_12.app/Contents/Developer
         run: |
           xcodebuild clean build -project PetProject.xcodeproj -scheme "PetProject" -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
