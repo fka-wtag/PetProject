@@ -23,7 +23,7 @@ jobs:
 
       - name: Secrets
         run: |
-          echo ${{ secrets.SOMESECRET }}
+          echo "${{ secrets.SOMESECRET }}"
 
       - name: Build
         env:
