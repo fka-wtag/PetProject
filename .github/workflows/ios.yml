@@ -49,4 +49,4 @@ jobs:
           scheme: ${{ matrix.scheme }}
           workspace: ${{ matrix.workspace }}
         run: |
-          xcodebuild test-without-building -workspace "$workspace" -scheme "$scheme" -destination "$destination" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean test -workspace "$workspace" -scheme "$scheme" -destination "$destination" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
