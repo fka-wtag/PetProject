@@ -1,6 +1,0 @@
-framework module Pods_PetProjectTests {
-  umbrella header "Pods-PetProjectTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
