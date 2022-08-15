@@ -51,6 +51,7 @@ playground.xcworkspace
 # CocoaPods
 Pods/
 Podfile.lock
+PetProject.xcworkspace/
 
 Carthage/Build/
 

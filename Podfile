@@ -13,7 +13,7 @@ target 'PetProject' do
   pod 'Firebase/RemoteConfig', '8.8.0'
   pod 'GoogleMaps', '6.2.1'
   pod 'GooglePlaces', '6.2.1'
-  pod 'Alamofire', '5.4.4'
+  #pod 'Alamofire', '5.4.4'
   #pod 'Kingfisher', '6.3.1'
   #pod 'ObjectMapperAdditions/Realm', '8.0'
   #pod 'Socket.IO-Client-Swift', '~> 15.2.0'
